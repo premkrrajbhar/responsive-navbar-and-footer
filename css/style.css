@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*--------------------------------------- Navbar Stying Start----------------------------------- */
+
+header nav {
+    background-color: skyblue;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+
+header nav .icon {
+    text-decoration: none;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+/* To Hide Checkbox Input Start */
+header nav #menu-toggle {
+    display: none;
+}
+
+/* To Hide Checkbox Input End */
+
+header nav .menu-icon {
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    display: none;
+}
+
+header nav .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+header nav .nav-links a {
+    margin: 15px 20px;
+    padding: 5px;
+    /* Consistent padding */
+    border: 2px solid transparent;
+    /* Transparent border to avoid layout shift */
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    /* Smooth Transition*/
+
+}
+
+header nav .nav-links a:hover {
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+header nav .nav-links button {
+    background-color: transparent;
+    color: black;
+    border-radius: 150px;
+    border: none;
+    border: 1px solid white;
+    font-family: sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 10px;
+}
+
+header nav .nav-links button:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid transparent;
+}
+
+/* Media  Queries For Different Screen Sizes Start */
+
+@media (max-width: 768px) {
+    header nav .menu-icon {
+        display: block;
+    }
+
+    header nav .nav-links {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+
+    header nav .nav-links a {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    header nav #menu-toggle:checked+.menu-icon+.nav-links {
+        display: flex;
+    }
+}
+
+/* Media  Queries For Different Screen Sizes End */
+
+
+
+/*--------------------------------------- Navbar Stying End ----------------------------------- */
+
+
+
+/*------------------------------ Footer Styling Start ------------------------------------------ */
+
+footer {
+    background-color: #111;
+}
+
+footer .footercontainer {
+    width: 100%;
+    padding: 20px 0px 0px;
+}
+
+footer .footercontainer .socialicons {
+    display: flex;
+    justify-content: center;
+}
+
+footer .footercontainer .socialicons a {
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 20px 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+footer .footercontainer .socialicons a:hover {
+    background-color: #111;
+    transition: 0.4s;
+}
+
+footer .footercontainer .socialicons a i {
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+footer .footercontainer .socialicons a i:hover {
+    color: white;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+
+footer .footernav {
+    margin: 30px 0;
+}
+
+footer .footernav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+footer .footernav ul li a {
+    color: white;
+    text-decoration: none;
+    margin: 25px;
+    font-size: 1.3em;
+    font-family: sans-serif;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+footer .footernav ul li a:hover {
+    opacity: 1;
+    font-size: 1.35em;
+    transition: 0.5s;
+}
+
+
+footer .footerbottom {
+    padding: 15px 0px 10px;
+    text-align: center;
+}
+
+footer .footerbottom p {
+    color: white;
+    font-family: sans-serif;
+}
+
+/*  Media Queries For Different Screen Sizes Start */
+
+@media (max-width: 768px) {
+    footer .footercontainer .socialicons a {
+        margin: 10px;
+    }
+
+    footer .footernav ul {
+        flex-direction: column;
+    }
+
+    footer .footernav ul li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+}
+
+@media (max-width: 300px) {
+    footer .footercontainer .socialicons a i {
+        font-size: 1.5em;
+    }
+
+    footer .footercontainer .socialicons a {
+        padding: 5px;
+    }
+}
+
+/*  Media Queries For Different Screen Sizes End */
+
+
+/*------------------------------ Footer Styling End ---------------------------------------------*/
