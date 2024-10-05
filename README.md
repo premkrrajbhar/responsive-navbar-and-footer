@@ -8,7 +8,7 @@ This project demonstrates a responsive navbar and footer built using HTML and CS
 
 ## Live Demo
 
-* You can check out the live demo of the project [here](https://premkrrajbhar.github.io/our-services-page/)
+* You can check out the live demo of the project [here](https://premkrrajbhar.github.io/responsive-navbar-and-footer/)
 
 ## Table of Contents
 
