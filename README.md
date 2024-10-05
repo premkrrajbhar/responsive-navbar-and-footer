@@ -14,7 +14,7 @@ This project demonstrates a responsive navbar and footer built using HTML and CS
 
 1. [Project Overview](#project-overview)
 2. [Features](#features)
-3. [Technologies Used](#technologies-used)
+3. [Technologies Used](#technologies-used-)
 4. [Usage](#usage)
 5. [Contributing](#contributing)
 6. [Contact](#contact)
